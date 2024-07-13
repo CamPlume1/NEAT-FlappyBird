@@ -9,6 +9,7 @@ class UpperColumn(pygame.sprite.Sprite):
         self.image.fill((0, 0, 255))
         self.rect = self.image.get_rect()
         self.rect.center = (1250, (center - 150) / 2)
+        self.bound = center - 150
 
     def update(self):
         self.rect.x -= 2
@@ -23,7 +24,8 @@ class LowerColumn(pygame.sprite.Sprite):
         self.image = pygame.Surface((50, 950 - center))
         self.image.fill((0, 255, 0))
         self.rect = self.image.get_rect()
-        self.rect.center = (1250, ((950  - center) / 2) + center)
+        self.rect.center = (1250, ((950 - center) / 2) + center)
+        self.bound = center + 150
 
     def update(self):
         self.rect.x -= 2

@@ -8,7 +8,7 @@ from Column import UpperColumn, LowerColumn
 
 def playGame():
     # Init game window
-    pygame.init()
+     pygame.init()
 
     # Show screen
     screen = pygame.display.set_mode((1200, 800))
